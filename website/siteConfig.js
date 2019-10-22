@@ -13,15 +13,15 @@ const blogUrl = 'https://blog.prismos.dev';
 const siteConfig = {
   title: 'Prism OS', // Title for your website.
   tagline: 'Learn how to build apps for Prism OS',
-  url: 'docs.prismos.dev', // Your website URL
+  url: 'https://docs.prismos.dev', // Your website URL
+  baseUrl: '/docs/', // Base URL for your project */
   blogUrl,
-  baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'os',
+  projectName: 'docs',
   organizationName: 'prism-os',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
