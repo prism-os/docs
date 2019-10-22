@@ -23,5 +23,6 @@ jobs:
         BRANCH: gh-pages
         BASE_BRANCH: master
         FOLDER: website/build
-        BUILD_SCRIPT: cd website && npm install && npm run build
+        BASE_DIRECTORY: website
+        BUILD_SCRIPT: npm install && npm run build
         CNAME: prismos.dev
