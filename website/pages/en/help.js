@@ -16,7 +16,8 @@ function Help(props) {
   const {config: siteConfig, language = ''} = props;
   const {baseUrl, docsUrl} = siteConfig;
   const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
-  const langPart = `${language ? `${language}/` : ''}`;
+  // const langPart = `${language ? `${language}/` : ''}`;
+  const langPart = '';
   const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
 
   const supportLinks = [
