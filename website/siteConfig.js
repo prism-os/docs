@@ -15,7 +15,7 @@ const siteConfig = {
   tagline: 'Learn how to build apps for Prism OS',
   url: 'https://prismos.dev', // Your website URL
   baseUrl: '/docs/', // Base URL for your project */
-  docsUrl: '/',
+  docsUrl: '',
   // docsUrl: '',
   blogUrl,
   // For github.io type URLs, you would set the url and baseUrl like:
