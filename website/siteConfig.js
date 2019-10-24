@@ -9,6 +9,8 @@
 // site configuration options.
 
 const blogUrl = 'https://blog.prismos.dev';
+const repoProjectName = 'os';
+const repoOrganizationName = 'prism-os';
 
 const siteConfig = {
   title: 'Prism OS', // Title for your website.
@@ -33,7 +35,6 @@ const siteConfig = {
     {doc: 'welcome', label: 'Docs'},
     {doc: 'doc4', label: 'API'},
     {href: blogUrl, label: 'Blog'},
-    /* {page: 'help', label: 'Help'} */
   ],
 
   /* path to images for header/footer */
@@ -95,9 +96,25 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-  repoUrl: 'https://github.com/prism-os/os',
+  repoProjectName,
+  repoOrganizationName,
+  repoUrl: `https://github.com/${repoOrganizationName}/${repoProjectName}`,
   stackOverflowTag: 'prismos',
   projectChatUrl: 'https://join.slack.com/t/prism-os/shared_invite/enQtODA2NTQ3NDQzNjcxLTc4YWEyMTk2MDZhMzdiZWQ5MmE2ZWQ0MTU5NTdjZTc2MzlkNGZiZDI3MTYzZTkwMDQyODAxNzk5Y2YwMDI1Yzc',
+  footerDocsLinks: [
+    {
+      id: 'welcome',
+      title: 'Getting Started',
+    },
+    {
+      id: 'doc2',
+      title: 'Guides',
+    },
+    {
+      id: 'doc3',
+      title: 'API Reference',
+    },
+  ],
 };
 
 module.exports = siteConfig;

@@ -39,15 +39,11 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Docs</h5>
-            <a href={this.docUrl('welcome', this.props.language)}>
-              Getting Started
-            </a>
-            <a href={this.docUrl('doc2.html', this.props.language)}>
-              Guides
-            </a>
-            <a href={this.docUrl('doc3.html', this.props.language)}>
-              API Reference
-            </a>
+            {this.props.config.footerDocsLinks.map(link => (
+              <a key={link.id} href={this.docUrl(link.id, this.props.language)}>
+                {link.title}
+              </a>
+            ))}
           </div>
           <div>
             <h5>Community</h5>
@@ -73,7 +69,7 @@ class Footer extends React.Component {
               className="github-button"
               href={this.props.config.repoUrl}
               data-icon="octicon-star"
-              data-count-href="/prism-os/os/stargazers"
+              data-count-href={`/${this.props.config.repoOrganizationName}/${this.props.config.repoProjectName}/stargazers`}
               data-show-count="true"
               data-count-aria-label="# stargazers on GitHub"
               aria-label="Star this project on GitHub">
