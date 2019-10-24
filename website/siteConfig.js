@@ -103,16 +103,16 @@ const siteConfig = {
   projectChatUrl: 'https://join.slack.com/t/prism-os/shared_invite/enQtODA2NTQ3NDQzNjcxLTc4YWEyMTk2MDZhMzdiZWQ5MmE2ZWQ0MTU5NTdjZTc2MzlkNGZiZDI3MTYzZTkwMDQyODAxNzk5Y2YwMDI1Yzc',
   footerDocsLinks: [
     {
-      id: 'welcome',
-      title: 'Getting Started',
+      doc: 'welcome',
+      label: 'Getting Started',
     },
     {
-      id: 'doc2',
-      title: 'Guides',
+      doc: 'doc2',
+      label: 'Guides',
     },
     {
-      id: 'doc3',
-      title: 'API Reference',
+      doc: 'doc3',
+      label: 'API Reference',
     },
   ],
 };

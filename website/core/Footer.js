@@ -39,9 +39,9 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Docs</h5>
-            {this.props.config.footerDocsLinks.map(link => (
-              <a key={link.id} href={this.docUrl(link.id, this.props.language)}>
-                {link.title}
+            {this.props.config.footerDocsLinks.map((link, index) => (
+              <a key={index} href={typeof link.href === 'string' ? link.href : this.docUrl(link.doc, this.props.language)}>
+                {link.label}
               </a>
             ))}
           </div>
