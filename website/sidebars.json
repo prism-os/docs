@@ -1,10 +1,27 @@
 {
   "docs": {
-    "Getting Started": ["welcome"],
-    "First Category": ["doc2"],
-    "Second Category": ["doc3"]
+    "Getting Started": [
+      "setting-up-device",
+      "connect-wifi",
+      "pair-phone",
+      "mobile-app-overview",
+      "os-interface"
+    ],
+    "Let's write apps": [
+      "write-first-app",
+      "running-app-on-device",
+      "publish-your-app"
+    ]
   },
   "docs-other": {
-    "First Category": ["doc4", "doc5"]
+    "API": [
+      "app-structure",
+      "graphics",
+      "datetime",
+      "timer",
+      "buttons",
+      "http",
+      "constants"
+    ]
   }
 }

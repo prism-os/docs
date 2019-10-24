@@ -32,8 +32,8 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'welcome', label: 'Docs'},
-    {doc: 'doc4', label: 'API'},
+    {doc: 'setting-up-device', label: 'Docs'},
+    {doc: 'app-structure', label: 'API'},
     {href: blogUrl, label: 'Blog'},
   ],
 
@@ -103,15 +103,15 @@ const siteConfig = {
   projectChatUrl: 'https://join.slack.com/t/prism-os/shared_invite/enQtODA2NTQ3NDQzNjcxLTc4YWEyMTk2MDZhMzdiZWQ5MmE2ZWQ0MTU5NTdjZTc2MzlkNGZiZDI3MTYzZTkwMDQyODAxNzk5Y2YwMDI1Yzc',
   footerDocsLinks: [
     {
-      doc: 'welcome',
+      doc: 'setting-up-device',
       label: 'Getting Started',
     },
     {
-      doc: 'doc2',
+      doc: 'write-first-app',
       label: 'Guides',
     },
     {
-      doc: 'doc3',
+      doc: 'app-structure',
       label: 'API Reference',
     },
   ],

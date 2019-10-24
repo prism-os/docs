@@ -1,7 +1,6 @@
 ---
-id: welcome
-title: Welcome
-sidebar_label: Welcome
+id: setting-up-device
+title: Setting up your device
 ---
 
 Check the [documentation](https://docusaurus.io) for how to use Docusaurus.
