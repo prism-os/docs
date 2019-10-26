@@ -9,6 +9,7 @@
     ],
     "Let's write apps": [
       "write-first-app",
+      "app-package-structure",
       "running-app-on-device",
       "publish-your-app"
     ]
@@ -20,8 +21,7 @@
       "datetime",
       "timer",
       "buttons",
-      "http",
-      "constants"
+      "http"
     ]
   }
 }
