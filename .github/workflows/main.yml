@@ -25,4 +25,3 @@ jobs:
         FOLDER: website/build
         BASE_DIRECTORY: website
         BUILD_SCRIPT: npm install && npm run build
-        CNAME: prismos.dev
