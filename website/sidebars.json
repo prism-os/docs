@@ -8,7 +8,8 @@
       "os-interface"
     ],
     "Let's write apps": [
-      "write-first-app",
+      "setup-prism-cli",
+      "create-first-app",
       "app-package-structure",
       "running-app-on-device",
       "publish-your-app"

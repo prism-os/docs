@@ -107,7 +107,7 @@ const siteConfig = {
       label: 'Getting Started',
     },
     {
-      doc: 'write-first-app',
+      doc: 'setup-prism-cli',
       label: 'Guides',
     },
     {
