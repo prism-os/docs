@@ -5,7 +5,7 @@ title: Setup Prism CLI
 
 ## Get the Prism SDK
 
-1. Download the latest release of Prism CLI from the Github page of https://github.com/prism-os/os for your system (Mac or Linux,Windows release will be comning soon).
+1. Download the latest release of Prism CLI from the Github page of https://github.com/prism-os/os for your system.
 
 2. Make sure you have `git`, `make`, `zip` installed in your system, these should be pre-installed in most systems.
 
