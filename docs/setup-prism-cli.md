@@ -21,11 +21,11 @@ export PATH="$PATH:`pwd`/prism/bin"
 ```
 This command sets your PATH variable for the current terminal window only. To permanently add Prism to your path, see [Update your path](setup-prism-cli.md#update-your-path).
 
-### Update your path
+## Update your path
 
 You can update your PATH variable for the current session at the command line, as shown in [Get the Prism SDK](setup-prism-cli.md#get-the-prism-sdk). You’ll probably want to update this variable permanently, so you can run `prismtool` commands in any terminal session.
 
-The steps for modifying this variable permanently for all terminal sessions are machine-specific. Typically you add a line to a file that is executed whenever you open a new window. For example:
+The steps for modifying this variable permanently for all terminal sessions are machine-specific. Typically you add a line to a file that is executed whenever you open a new window. The steps below will cover the most common cases:
 
 1. Determine the directory where you placed the Prism SDK. You need this in Step 3.
 2. Open (or create) the rc file for your shell. For example,  
