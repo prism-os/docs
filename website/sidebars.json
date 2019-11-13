@@ -2,8 +2,7 @@
   "docs": {
     "Getting Started": [
       "setting-up-device",
-      "connecting-with-device",
-      "os-interface"
+      "connecting-with-device"
     ],
     "Let's write apps": [
       "setup-prism-cli",
