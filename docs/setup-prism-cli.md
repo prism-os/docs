@@ -5,7 +5,7 @@ title: Setup Prism CLI
 
 ## Get the Prism SDK
 
-1. Download the latest release of Prism CLI from the Github page of https://github.com/prism-os/os for your system.
+1. Download the latest release of Prism CLI from the Github page of the project (https://github.com/prism-os/os) for your system.
 
 2. Make sure you have `git`, `make`, `zip` installed in your system, these should be pre-installed in most systems.
 
@@ -23,7 +23,7 @@ This command sets your PATH variable for the current terminal window only. To pe
 
 ## Update your path
 
-You can update your PATH variable for the current session at the command line, as shown in [Get the Prism SDK](setup-prism-cli.md#get-the-prism-sdk). You’ll probably want to update this variable permanently, so you can run `prismtool` commands in any terminal session.
+You can update your PATH variable for the current session at the command line, as shown in [Get the Prism SDK](setup-prism-cli.md#get-the-prism-sdk) section. You’ll probably want to update this variable permanently, so you can run `prismtool` commands in any terminal session.
 
 The steps for modifying this variable permanently for all terminal sessions are machine-specific. Typically you add a line to a file that is executed whenever you open a new window. The steps below will cover the most common cases:
 
@@ -37,7 +37,7 @@ If you are using a different shell, the file path and filename will be different
 ```bash
 export PATH="$PATH:[PATH_TO_PRISM_SDK_DIRECTORY]/prism/bin"
 ```
-4. Run source `$HOME/.<rc file>` to refresh the current window, or open a new terminal window to automatically source the file.
+4. Run `source $HOME/.<rc file>` to refresh the current window, or open a new terminal window to automatically source the file.
 5. Verify that the `prism/bin` directory is now in your PATH by running:
 ```bash
 echo $PATH

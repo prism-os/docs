@@ -28,11 +28,10 @@ This can be used to make network calls, start timers etc.
 This can be used to do clean up like clearing any running timers, unfinished network calls etc.
 
 3. `draw`: This function is the render loop for the app and is called whenever the OS is about to draw an update for your app.  
-This is the only lifecycle method that is given access to `graphics` object which can be used to draw various graphics on the screen.  
-See the [graphics API](graphics.md) for more info.  
+This is the only lifecycle method that is given access to `graphics` object which can be used to draw various graphics on the screen. See the [Graphics API](graphics.md) section for more info.  
 This function should not be used to do any long running operations or to update any data, this should just be a bunch of graphics api calls.
 
-4. `update`: This function is used to update any data, make schedule api calls, start timer etc.  
+4. `update`: This function is used to update any data, make or schedule api calls, start timer etc.  
 This should also minimise any long running or blocking operations else your app might experience slowdown. 
 
 5. `notify`: This function is used to send out any notifications. Whenver the OS polls the app for any new notification, `notify` function will be called.  

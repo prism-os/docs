@@ -57,7 +57,7 @@ Which returns a bool indicating whether the request is complete or not, successf
 int getStatus();
 ```
 This returns the status code of the reponse returned.  
-If the request is not complete yet or fails, then one of the below #define'ed constants may also be returned:  
+If the request is not complete yet or fails, then one of the below constants may also be returned:  
 
 `HTTP_INTIALIZE`  
 `HTTP_WAITING_TO_CONNECT`  

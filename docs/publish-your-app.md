@@ -20,8 +20,8 @@ This will create a `main.apkg` file in the same directory.
 
 Now go to your `Developer Dashboard` in [Prism Store](https://store.prismos.dev/) and click on the `+` button on the bottom right to Create a new app.  
 This will open up a form, where you have to enter:
-1. Basic details like name, description, category etc
-2. The `main.apkg` file you compiled previously in [Compile app package](publish-your-app.md#compile-app-package)
+1. Basic details like name, description, category etc.
+2. The `main.apkg` file you compiled previously in [Compile app package](publish-your-app.md#compile-app-package) section.
 3. One or more screenshots of your app taken using `prismtool screenshot` command, atleast 1 screenshot is necessary.
 4. Once all details are entered and submitted, you will be taken back to the `Developer Dashboard` where you can keep track of the verification process of your recently uploaded app.
 5. If the verification succeeds then the app will be made live on the store and `Show` link will show up next to your app on the `Developer Dashboard`.
