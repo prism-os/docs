@@ -8,7 +8,7 @@
 // See https://docusaurus.io/docs/site-config for all the possible
 // site configuration options.
 
-const blogUrl = 'https://blog.prismos.dev';
+// const blogUrl = 'https://blog.prismos.dev';
 const repoProjectName = 'os';
 const repoOrganizationName = 'prism-os';
 
@@ -18,7 +18,7 @@ const siteConfig = {
   url: 'https://prismos.dev', // Your website URL
   baseUrl: '/docs/', // Base URL for your project */
   docsUrl: '',
-  blogUrl,
+  // blogUrl,
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
@@ -34,7 +34,7 @@ const siteConfig = {
   headerLinks: [
     {doc: 'setting-up-device', label: 'Docs'},
     {doc: 'app-structure', label: 'API'},
-    {href: blogUrl, label: 'Blog'},
+    // {href: blogUrl, label: 'Blog'},
   ],
 
   /* path to images for header/footer */
