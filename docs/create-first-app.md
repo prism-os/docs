@@ -8,7 +8,8 @@ title: Creating your first app
 To be able to publish apps onto the Prism Store you will need to create a developer account first,  
 to do that follow the below steps:
 1. Head to [Prism Store](https://store.prismos.dev/), create a new account or log in.
-2. Then from the top right drop down, click on `Developer Dashboard`.
+2. Then from the top right drop down, click on `Developer Dashboard`.  
+![developer-dashboard](assets/developer_dashboard.jpg)
 3. The first time you open that, you will be asked to enter a unique developer username, which will be needed for creating and publishing apps.
 4. Once you enter a developer username, you will be taken to the `Developer Dashboard` where you can see all your published apps, and publish new apps or edit or update existing apps.
 
