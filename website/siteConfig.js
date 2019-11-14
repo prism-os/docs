@@ -71,7 +71,7 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js'],
+  scripts: ['https://buttons.github.io/buttons.js', 'crisp.js'],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
@@ -83,6 +83,7 @@ const siteConfig = {
   twitterUsername: 'prism_os',
   twitterImage: 'img/undraw_tweetstorm.svg',
   facebookAppId: '1890949264519838',
+  gaTrackingId: 'UA-101219891-4',
 
   // For sites with a sizable amount of content, set collapsible to true.
   // Expand/collapse the links and subcategories under categories.
