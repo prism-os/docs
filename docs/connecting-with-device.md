@@ -15,6 +15,7 @@ To complete the setup of your device, you need to :
 ![wifi-hotspot](assets/pair0.jpg)
 3. Once you are connected to the hotspot, your phone should show you a notification to take you to the config page, if it doesn't then you can manually open the browser app on your phone and go to `192.168.4.1`.
 4. At this page you will be shown a list of Wi-Fi networks around you, and you can select your network's name, enter the password and connect. **Your password is sent to device locally and not sent to any server**.  
+![wifi-menu](assets/wifi_home.jpg)
 ![wifi-menu](assets/wifi_menu.jpg)
 5. The device will try to connect to the network, and if it succeeds it will move to the pairing screen and turn off the hotspot at which point your phone should connect back to your original Wi-Fi network.  
 If it fails to connect to the Wi-Fi network (for example, if the password entered was wrong), your device will remain on the hotspot and you can open `192.168.4.1` and try to connect again.
