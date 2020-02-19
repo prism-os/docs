@@ -13,7 +13,7 @@ const repoProjectName = 'os';
 const repoOrganizationName = 'prism-os';
 
 const siteConfig = {
-  title: 'Prism OS', // Title for your website.
+  title: 'Prism', // Title for your website.
   tagline: 'Learn how to build apps for Prism OS',
   url: 'https://prismos.dev', // Your website URL
   baseUrl: '/docs/', // Base URL for your project */
@@ -63,7 +63,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Prism OS`,
+  copyright: `Copyright © ${new Date().getFullYear()} Prism`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
@@ -72,6 +72,11 @@ const siteConfig = {
 
   // Add custom scripts here that would be placed in <script> tags.
   scripts: ['https://buttons.github.io/buttons.js', 'crisp.js'],
+
+  // custom stylesheets
+  stylesheets: [
+    'https://fonts.googleapis.com/css?family=Lato',
+  ],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
