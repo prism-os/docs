@@ -9,7 +9,7 @@ The source code of your app created in the [Creating your first app](create-firs
 3. `main.cpp`
 
 The `main.hpp` file is the main header file of your app and it contains the declaration of your app's main class.
-Where as, the `main.cpp` file contains the implementation of all the methods declared in your class.  
+Where as, the `main.cpp` file contains the implementation of all the methods in your class.  
 
 You can learn more about the member functions of your app class and the app structure in [App structure](app-structure.md) section.  
 
