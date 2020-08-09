@@ -26,6 +26,10 @@ If it fails to connect to the Wi-Fi network (for example, if the password entere
 1. Once your device successfully connects to your Wi-Fi network it would start showing the pairing instructions on the screen along with a pairing code.  
 ![pairing-screen-instruction](assets/pair1.jpg)
 2. Make sure your phone is on the same Wi-Fi network as the one you connected your device to and open the Prism app on your phone.
+Get it from below:  
+  
+<a style="display:inline-block;margin-left:32px;" target="_blank" rel="noopener noreferrer" href="https://apps.apple.com/app/id1514843771?utm_source=prism-docs"><img src="/docs/assets/appstore_en_badge_web_generic.png" style="height:50px;width:auto;"/></a>
+<a style="display:inline-block;" target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.sidevesh.prism&hl=en_IN&utm_source=prism-docs&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img src="/docs/assets/play_en_badge_web_generic.png" style="height:50px;width:auto;"/></a>
 3. After logging in or creating a new account, you will be shown instructions on the app to pair with your device.
 4. You need to select your device in the list of Prism OS devices detected by your phone in the network, and enter the pairing code shown on the screen of your device.  
 ![devices-menu](assets/pair2.jpg)
