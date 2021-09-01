@@ -15,7 +15,9 @@ title: Setup Prism CLI
  unzip ~/Downloads/prismtool-macos-amd64.zip -d prism
 ```
 
-4. Add the `prismtool` binary to your path:
+4. Run `setup_platforms.sh` script in the root of extracted directory.
+
+5. Add the `prismtool` binary to your path:
 ```bash
 export PATH="$PATH:`pwd`/prism/bin"
 ```
