@@ -1,0 +1,275 @@
+diff --git a/node_modules/docusaurus/lib/core/MetadataBlog.js b/node_modules/docusaurus/lib/core/MetadataBlog.js
+new file mode 100644
+index 0000000..84b2d5f
+--- /dev/null
++++ b/node_modules/docusaurus/lib/core/MetadataBlog.js
+@@ -0,0 +1,4 @@
++/**
++ * @generated
++ */
++module.exports = [];
+diff --git a/node_modules/docusaurus/lib/core/Redirect.js b/node_modules/docusaurus/lib/core/Redirect.js
+index 2a8af6f..0a71313 100755
+--- a/node_modules/docusaurus/lib/core/Redirect.js
++++ b/node_modules/docusaurus/lib/core/Redirect.js
+@@ -17,9 +17,9 @@ class Redirect extends React.Component {
+       idx(translation, [this.props.language, 'localized-strings', 'tagline']) ||
+       this.props.config.tagline;
+     const title = this.props.title
+-      ? `${this.props.title} · ${this.props.config.title}`
++      ? `${this.props.title} | ${this.props.config.title}`
+       : (!this.props.config.disableTitleTagline &&
+-          `${this.props.config.title} · ${tagline}`) ||
++          `${this.props.config.title} | ${tagline}`) ||
+         this.props.config.title;
+     const description = this.props.description || tagline;
+     const url =
+diff --git a/node_modules/docusaurus/lib/core/Site.js b/node_modules/docusaurus/lib/core/Site.js
+index d21fd12..da84302 100755
+--- a/node_modules/docusaurus/lib/core/Site.js
++++ b/node_modules/docusaurus/lib/core/Site.js
+@@ -36,9 +36,9 @@ class Site extends React.Component {
+       idx(translation, [this.props.language, 'localized-strings', 'tagline']) ||
+       this.props.config.tagline;
+     const title = this.props.title
+-      ? `${this.props.title} · ${this.props.config.title}`
++      ? `${this.props.title} | ${this.props.config.title}`
+       : (!this.props.config.disableTitleTagline &&
+-          `${this.props.config.title} · ${tagline}`) ||
++          `${this.props.config.title} | ${tagline}`) ||
+         this.props.config.title;
+     const description = this.props.description || tagline;
+     const path = getPath(
+diff --git a/node_modules/docusaurus/lib/core/metadata.js b/node_modules/docusaurus/lib/core/metadata.js
+new file mode 100644
+index 0000000..9361161
+--- /dev/null
++++ b/node_modules/docusaurus/lib/core/metadata.js
+@@ -0,0 +1,227 @@
++/**
++ * @generated
++ */
++module.exports = {
++  "app-package-structure": {
++    "id": "app-package-structure",
++    "title": "Structure of app package",
++    "source": "app-package-structure.md",
++    "permalink": "app-package-structure.html",
++    "localized_id": "app-package-structure",
++    "language": "en",
++    "sidebar": "docs",
++    "category": "Let's write apps",
++    "subcategory": null,
++    "order": 5,
++    "next_id": "running-app-on-device",
++    "next": "running-app-on-device",
++    "previous_id": "create-first-app",
++    "previous": "create-first-app",
++    "previous_title": "Creating your first app",
++    "next_title": "Running your app on device"
++  },
++  "app-structure": {
++    "id": "app-structure",
++    "title": "App structure",
++    "source": "app-structure.md",
++    "permalink": "app-structure.html",
++    "localized_id": "app-structure",
++    "language": "en",
++    "sidebar": "docs-other",
++    "category": "API",
++    "subcategory": null,
++    "order": 1,
++    "next_id": "graphics",
++    "next": "graphics",
++    "next_title": "Graphics"
++  },
++  "buttons": {
++    "id": "buttons",
++    "title": "Buttons",
++    "source": "buttons.md",
++    "permalink": "buttons.html",
++    "localized_id": "buttons",
++    "language": "en",
++    "sidebar": "docs-other",
++    "category": "API",
++    "subcategory": null,
++    "order": 5,
++    "next_id": "http",
++    "next": "http",
++    "previous_id": "timer",
++    "previous": "timer",
++    "previous_title": "Timer",
++    "next_title": "Http"
++  },
++  "connecting-with-device": {
++    "id": "connecting-with-device",
++    "title": "Connecting with your device",
++    "source": "connecting-with-device.md",
++    "permalink": "connecting-with-device.html",
++    "localized_id": "connecting-with-device",
++    "language": "en",
++    "sidebar": "docs",
++    "category": "Getting Started",
++    "subcategory": null,
++    "order": 2,
++    "next_id": "setup-prism-cli",
++    "next": "setup-prism-cli",
++    "previous_id": "setting-up-device",
++    "previous": "setting-up-device",
++    "previous_title": "Setting up your device",
++    "next_title": "Setup Prism CLI"
++  },
++  "create-first-app": {
++    "id": "create-first-app",
++    "title": "Creating your first app",
++    "source": "create-first-app.md",
++    "permalink": "create-first-app.html",
++    "localized_id": "create-first-app",
++    "language": "en",
++    "sidebar": "docs",
++    "category": "Let's write apps",
++    "subcategory": null,
++    "order": 4,
++    "next_id": "app-package-structure",
++    "next": "app-package-structure",
++    "previous_id": "setup-prism-cli",
++    "previous": "setup-prism-cli",
++    "previous_title": "Setup Prism CLI",
++    "next_title": "Structure of app package"
++  },
++  "datetime": {
++    "id": "datetime",
++    "title": "DateTime",
++    "source": "datetime.md",
++    "permalink": "datetime.html",
++    "localized_id": "datetime",
++    "language": "en",
++    "sidebar": "docs-other",
++    "category": "API",
++    "subcategory": null,
++    "order": 3,
++    "next_id": "timer",
++    "next": "timer",
++    "previous_id": "graphics",
++    "previous": "graphics",
++    "previous_title": "Graphics",
++    "next_title": "Timer"
++  },
++  "graphics": {
++    "id": "graphics",
++    "title": "Graphics",
++    "source": "graphics.md",
++    "permalink": "graphics.html",
++    "localized_id": "graphics",
++    "language": "en",
++    "sidebar": "docs-other",
++    "category": "API",
++    "subcategory": null,
++    "order": 2,
++    "next_id": "datetime",
++    "next": "datetime",
++    "previous_id": "app-structure",
++    "previous": "app-structure",
++    "previous_title": "App structure",
++    "next_title": "DateTime"
++  },
++  "http": {
++    "id": "http",
++    "title": "Http",
++    "source": "http.md",
++    "permalink": "http.html",
++    "localized_id": "http",
++    "language": "en",
++    "sidebar": "docs-other",
++    "category": "API",
++    "subcategory": null,
++    "order": 6,
++    "previous_id": "buttons",
++    "previous": "buttons",
++    "previous_title": "Buttons"
++  },
++  "publish-your-app": {
++    "id": "publish-your-app",
++    "title": "Publish your app to Prism Store",
++    "source": "publish-your-app.md",
++    "permalink": "publish-your-app.html",
++    "localized_id": "publish-your-app",
++    "language": "en",
++    "sidebar": "docs",
++    "category": "Let's write apps",
++    "subcategory": null,
++    "order": 7,
++    "previous_id": "running-app-on-device",
++    "previous": "running-app-on-device",
++    "previous_title": "Running your app on device"
++  },
++  "running-app-on-device": {
++    "id": "running-app-on-device",
++    "title": "Running your app on device",
++    "source": "running-app-on-device.md",
++    "permalink": "running-app-on-device.html",
++    "localized_id": "running-app-on-device",
++    "language": "en",
++    "sidebar": "docs",
++    "category": "Let's write apps",
++    "subcategory": null,
++    "order": 6,
++    "next_id": "publish-your-app",
++    "next": "publish-your-app",
++    "previous_id": "app-package-structure",
++    "previous": "app-package-structure",
++    "previous_title": "Structure of app package",
++    "next_title": "Publish your app to Prism Store"
++  },
++  "setting-up-device": {
++    "id": "setting-up-device",
++    "title": "Setting up your device",
++    "source": "setting-up-device.md",
++    "permalink": "setting-up-device.html",
++    "localized_id": "setting-up-device",
++    "language": "en",
++    "sidebar": "docs",
++    "category": "Getting Started",
++    "subcategory": null,
++    "order": 1,
++    "next_id": "connecting-with-device",
++    "next": "connecting-with-device",
++    "next_title": "Connecting with your device"
++  },
++  "setup-prism-cli": {
++    "id": "setup-prism-cli",
++    "title": "Setup Prism CLI",
++    "source": "setup-prism-cli.md",
++    "permalink": "setup-prism-cli.html",
++    "localized_id": "setup-prism-cli",
++    "language": "en",
++    "sidebar": "docs",
++    "category": "Let's write apps",
++    "subcategory": null,
++    "order": 3,
++    "next_id": "create-first-app",
++    "next": "create-first-app",
++    "previous_id": "connecting-with-device",
++    "previous": "connecting-with-device",
++    "previous_title": "Connecting with your device",
++    "next_title": "Creating your first app"
++  },
++  "timer": {
++    "id": "timer",
++    "title": "Timer",
++    "source": "timer.md",
++    "permalink": "timer.html",
++    "localized_id": "timer",
++    "language": "en",
++    "sidebar": "docs-other",
++    "category": "API",
++    "subcategory": null,
++    "order": 4,
++    "next_id": "buttons",
++    "next": "buttons",
++    "previous_id": "datetime",
++    "previous": "datetime",
++    "previous_title": "DateTime",
++    "next_title": "Buttons"
++  }
++};
