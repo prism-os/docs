@@ -3,7 +3,7 @@ id: setting-up-device
 title: Setting up your device
 ---
 
-Thanks for showing interest in trying out Prism OS! We're glad you are here.  
+Thanks for showing interest in trying out Prism OS!  
 
 Now, first thing we have to do is get you set up with a device running Prism OS.  
 Currently Prism OS supports only ESP8266 with support for ESP32 coming soon.  
