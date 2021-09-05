@@ -12,12 +12,16 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@master
 
-    - name: Build and Deploy
-      uses: sidevesh/github-pages-deploy-action@master
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pages
-        BASE_BRANCH: master
-        FOLDER: website/build
-        BASE_DIRECTORY: website
-        BUILD_SCRIPT: npm install && npm run build
+    - name: Install and build
+      run: |
+        cd website
+        npm install
+        npm run build
+
+    - name: Deploy to prism-os.github.io
+      uses: JamesIves/github-pages-deploy-action@4.1.5
+      with:
+        token: ${{ secrets.ACCESS_TOKEN }}
+        single-commit: true
+        branch: gh-pages
+        folder: website/build
