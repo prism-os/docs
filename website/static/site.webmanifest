@@ -1,6 +1,6 @@
 {
-    "name": "Prism Docs",
-    "short_name": "Prism Docs",
+    "name": "Prism",
+    "short_name": "Prism",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -15,7 +15,7 @@
     ],
     "theme_color": "#003ee6",
     "background_color": "#003ee6",
-    "start_url": "https://prismos.dev/docs",
+    "start_url": "https://prismos.dev",
     "display": "standalone",
     "orientation": "portrait"
 }
