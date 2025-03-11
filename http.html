@@ -1,0 +1,116 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Http | Prism</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="`Http` class can be used to make http calls over the connected Wi-Fi network.  "/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Http | Prism"/><meta property="og:type" content="website"/><meta property="og:url" content="https://prismos.dev/docs/"/><meta property="og:description" content="`Http` class can be used to make http calls over the connected Wi-Fi network.  "/><meta property="og:image" content="https://prismos.dev/docs/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://prismos.dev/docs/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/docs/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-101219891-4', 'auto');
+              ga('send', 'pageview');
+            </script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="crisp.js"></script><script src="/docs/js/scrollSpy.js"></script><link rel="stylesheet" href="/docs/css/main.css"/><script src="/docs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docs/"><img class="logo" src="/docs/favicon.ico" alt="Prism"/><h2 class="headerTitleWithLogo">Prism</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/setting-up-device" target="_self">Docs</a></li><li class="siteNavGroupActive"><a href="/docs/app-structure" target="_self">API</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>API</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">API</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/app-structure">App structure</a></li><li class="navListItem"><a class="navItem" href="/docs/graphics">Graphics</a></li><li class="navListItem"><a class="navItem" href="/docs/datetime">DateTime</a></li><li class="navListItem"><a class="navItem" href="/docs/timer">Timer</a></li><li class="navListItem"><a class="navItem" href="/docs/buttons">Buttons</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/http">Http</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Http</h1></header><article><div><span><p><code>Http</code> class can be used to make http calls over the connected Wi-Fi network.<br>
+It operates in completely asynchronous fashion to prevent lock ups and is designed with ease of use in mind.</p>
+<p>To make an http call, create an instance of <code>Http</code> class as follows:</p>
+<pre><code class="hljs css language-C++">Http request = Http(<span class="hljs-string">"example.com"</span>);
+</code></pre>
+<p>The prototype of the <code>Http</code> class constructor is as follows:</p>
+<pre><code class="hljs css language-C++">Http(<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* host, <span class="hljs-keyword">int</span> port = <span class="hljs-number">80</span>);
+</code></pre>
+<p><br/>
+Once the <code>Http</code> class object is instantiated, we can make <code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code> requests with the following function respectively:</p>
+<pre><code class="hljs css language-C++"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">get</span><span class="hljs-params">(<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* path)</span></span>;
+</code></pre>
+<pre><code class="hljs css language-C++"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">post</span><span class="hljs-params">(<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* path, <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* body = <span class="hljs-literal">NULL</span>)</span></span>;
+</code></pre>
+<pre><code class="hljs css language-C++"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">put</span><span class="hljs-params">(<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* path, <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* body = <span class="hljs-literal">NULL</span>)</span></span>;
+</code></pre>
+<pre><code class="hljs css language-C++"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">del</span><span class="hljs-params">(<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* path, <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* body = <span class="hljs-literal">NULL</span>)</span></span>;
+</code></pre>
+<p>In these the <code>path</code> is the path of the endpoint relative to host (for example, <code>/</code> or <code>/users/2</code>),<br>
+and <code>body</code> takes a const char string for the request body.<br>
+<br/>
+To add any header to the request, use:</p>
+<pre><code class="hljs css language-C++"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addHeader</span><span class="hljs-params">(<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* header)</span></span>;
+</code></pre>
+<p><br/>
+To set the <code>Content-Type</code> for the request, use:</p>
+<pre><code class="hljs css language-C++"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setContentType</span><span class="hljs-params">(<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* content_type)</span></span>;
+</code></pre>
+<p><br/>
+To get the data that is returned from the response, you can use:</p>
+<pre><code class="hljs css language-C++"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">writeResponseTo</span><span class="hljs-params">(<span class="hljs-keyword">char</span>* response)</span></span>;
+</code></pre>
+<p>This takes as parameter the pointer to a char array where the response is written once returned from the network request.<br>
+<br/>
+Once the request is made by calling one of the <code>get</code>, <code>post</code>, <code>put</code> or <code>del</code> methods, the status of the request can be checked asynchronously using:</p>
+<pre><code class="hljs css language-C++"><span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">isComplete</span><span class="hljs-params">()</span></span>;
+</code></pre>
+<p>Which returns a bool indicating whether the request is complete or not, successfully or otherwise.</p>
+<pre><code class="hljs css language-C++"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">getStatus</span><span class="hljs-params">()</span></span>;
+</code></pre>
+<p>This returns the status code of the reponse returned.<br>
+If the request is not complete yet or fails, then one of the below constants may also be returned:</p>
+<p><code>HTTP_INTIALIZE</code>  <br>
+<code>HTTP_WAITING_TO_CONNECT</code>  <br>
+<code>HTTP_WAITING_FOR_RESPONSE</code>  <br>
+<code>HTTP_OUT_OF_MEMORY</code>  <br>
+<code>HTTP_CONNECTION_ERROR</code>  <br>
+<code>HTTP_INVALID_RESPONSE</code>  <br>
+<code>HTTP_DISCONNECTED_BEFORE_RESPONSE</code>  <br>
+<code>HTTP_TIMEOUT</code></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/buttons"><span class="arrow-prev">← </span><span>Buttons</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docs/" class="nav-home"><img src="/docs/favicon.ico" alt="Prism" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/setting-up-device">Getting Started</a><a href="/docs/setup-prism-cli">Guides</a><a href="/docs/app-structure">API Reference</a></div><div><h5>Community</h5><a href="https://stackoverflow.com/questions/tagged/prismos" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://join.slack.com/t/prism-os/shared_invite/enQtODA2NTQ3NDQzNjcxLTc4YWEyMTk2MDZhMzdiZWQ5MmE2ZWQ0MTU5NTdjZTc2MzlkNGZiZDI3MTYzZTkwMDQyODAxNzk5Y2YwMDI1Yzc">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://github.com/prism-os/os">GitHub</a><a class="github-button" href="https://github.com/prism-os/os" data-icon="octicon-star" data-count-href="/prism-os/os/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a><div class="social"><a href="https://twitter.com/prism_os" class="twitter-follow-button">Follow @prism_os</a></div><div class="social"><div class="fb-like" data-href="https://prismos.dev" data-colorscheme="dark" data-layout="standard" data-share="true" data-width="225" data-show-faces="false"></div></div></div></section><section class="copyright">Copyright © 2025 Prism</section></footer></div><script>window.fbAsyncInit = function() {FB.init({appId:'1890949264519838',xfbml:true,version:'v2.7'});};(function(d, s, id){var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) {return;}js = d.createElement(s); js.id = id;js.src = '//connect.facebook.net/en_US/sdk.js';fjs.parentNode.insertBefore(js, fjs);}(document, 'script','facebook-jssdk'));
+                </script><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>
